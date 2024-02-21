@@ -35,11 +35,11 @@
       </div>
     </div>
 
-<!--    <div class="custom">-->
-<!--      <div class="box">-->
-<!--        <font><span id="runtime_span">我们的故事尚未开始...</span></font>-->
-<!--      </div>-->
-<!--    </div>-->
+    <div id="showcontent" class="">
+      <div class="box">
+       <font><span id="runtime_span">我们的故事尚未开始...</span></font>
+      </div>
+    </div>
 
     <div class="box-box">
       <div class="box-top">
@@ -154,6 +154,10 @@
     if (content.classList.contains("hidden")) {
       content.classList.remove("hidden");
     }
+    var context = document.getElementById("showcontent");
+    if (!content.classList.contains("hidden")) {
+    content.classList.add("hidden");
+    } 
   });
 </script>
 
